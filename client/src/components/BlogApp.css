@@ -1,0 +1,156 @@
+.blog-app {
+  max-width: 700px;
+  margin: auto;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  color: #444;
+}
+
+.form-control {
+  border-radius: 6px;
+}
+
+.btn {
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.btn-sm {
+  min-width: 75px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #007bff;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.post-card {
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.01);
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-mode .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .navbar-light {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+}
+
+body.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* BlogApp.css */
+
+.Toastify__toast-container {
+  width: auto !important;
+}
+
+.Toastify__toast {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 12px 18px;
+  background: #1f1f1f;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Toastify__toast--error {
+  background: #ff4d4f !important;
+  color: #fff !important;
+}
+
+.Toastify__toast--success {
+  background: #52c41a !important;
+  color: #fff !important;
+}
+
+.Toastify__toast--info {
+  background: #1890ff !important;
+  color: #fff !important;
+}
+
+/* Avoid pushing toast too far down */
+.Toastify__toast-container--top-center {
+  top: 20px;
+  transform: none;
+}
+
